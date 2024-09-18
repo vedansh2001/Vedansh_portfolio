@@ -488,12 +488,24 @@ body {
   #SKILLS
 \*-----------------------------------*/
 
+@media (max-width: 600px) {
+  .skills-list {
+    gap: 25px; /* Reduce the gap between items on smaller screens */
+  }
+
+  .skills-list img {
+    width: 40px; /* Make the icons smaller on smaller screens */
+    height: 40px;
+  }
+}
+
+
 .skills .section-title { margin-block-end: 20px; }
 
 .skills .section-text { margin-block-end: 70px; }
 
 .skills-list {
-  display: grid;
+  display: flex;
   gap: 25px;
 }
 
