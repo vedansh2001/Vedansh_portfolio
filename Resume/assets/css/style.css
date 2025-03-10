@@ -243,7 +243,9 @@ body {
   color: var(--orange-soda);
   font-family: var(--ff-barlow);
   font-size: var(--fs-4);
+  display: flex;
   text-align: center;
+  justify-content: center;
 }
 
 .h2,
@@ -259,7 +261,12 @@ body {
 .h3 { font-size: var(--fs-3); }
 
 .section-title,
-.section-text { text-align: center; }
+.section-text { display:flex; justify-content: center; }
+
+.about-button-div {
+  display: flex;
+  justify-content: center;
+}
 
 
 
@@ -849,8 +856,8 @@ textarea.contact-input {
    */
 
   .container {
-    max-width: 1050px;
-    margin-inline: auto;
+    max-width: 60%;
+    margin-left: 20%;
   }
 
 
@@ -995,8 +1002,9 @@ textarea.contact-input {
   .about { padding-block: 180px; }
 
   .about .container {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
     align-items: center;
     gap: 80px;
   }
